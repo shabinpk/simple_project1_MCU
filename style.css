@@ -1,0 +1,201 @@
+
+*{
+font-family: cursive;
+box-sizing: border-box;
+ } 
+ html{
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    scroll-behavior: smooth;
+ }
+ body{
+    margin:0;
+    background-image: url(https://wallpapercave.com/wp/wp2037463.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100% ;
+    height: 100vh;
+}
+
+#home{
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home h1{
+    color:white;
+    mix-blend-mode: exclusion;
+}
+#home h1:hover{
+    font-size: 50px;
+    color:#e00f0f;
+    text-shadow:3px  2px 2px rgb(14, 150, 204) ;
+
+    cursor: default;
+}
+#goup{
+    position:fixed;
+    padding:10px;
+    background-color: rgb(169, 197, 13);
+    color:#fff;
+    bottom:1em;
+    right:1em;
+    border-radius: 30px;
+    
+}
+#goup:hover{
+    background-color: rgb(69, 199, 29);
+    cursor:pointer;
+    text-shadow:3px  2px 2px rgb(14, 150, 204) ;
+
+}
+  nav {
+    
+    z-index: 1;
+    position:fixed;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    transition:1s ease-in ;
+  }
+
+  nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    color: #fff;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+    color: #fff;
+    text-shadow:1px 2px 2px #e41111 ;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  nav ul li a:hover {
+    color:#e00f0f;
+    cursor: default;
+    text-shadow:3px  2px 2px rgb(14, 150, 204) ;
+  }
+ 
+#about{
+
+    font-size: 20px;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+  
+    
+}
+#about h2:hover{
+  color:#ffffff;
+  font-size: 40px;
+    cursor: default; 
+    text-shadow:3px  2px 2px hsl(0, 93%, 47%) ;
+
+}
+#about p:hover{
+  color:hsl(0, 0%, 98%);
+  font-size: 25px;
+  cursor:default;
+  text-shadow:3px  2px 2px hsl(0, 88%, 48%) ;
+
+}
+@keyframes moveDown{
+  0% { 
+      transform: translateY(-40px); 
+      opacity: 0;
+  }
+  100% { 
+      transform: translateY(0px);  
+      opacity: 1;
+  }
+}
+#characters{
+  display:flex;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+#characters ul{
+  flex-wrap: wrap;
+  max-width: 50%;
+ 
+  color: #fff;
+}
+#characters img{
+  max-width: 400px;
+  max-height: 400px;
+width:300px;
+height: 300px;
+}
+#characters p:hover{
+  color:hsl(0, 0%, 98%);
+  font-size: 25px;
+  cursor:default;
+  text-shadow:3px  2px 2px hsl(0, 88%, 48%) ;
+}
+#characters h3:hover{
+  color:#ffffff;
+  font-size: 30px;
+    cursor: default; 
+    text-shadow:3px  2px 2px hsl(0, 93%, 47%) ;
+}
+#characters img:hover{
+
+width:400px;
+height: 400px;
+}
+
+
+
+
+
+
+
+/* 
+#characters{
+  font-size: 20px;
+  color:white;
+}
+#characters li{
+  list-style: none;
+}
+#characters li p:hover{
+  color:#e00f0f;
+  font-size: 25px;
+  cursor: default;
+  text-shadow:3px  2px 2px rgb(14, 150, 204) ;
+
+}
+#characters li h3:hover{
+  color:#e00f0f;
+  cursor: default;
+  text-shadow:3px  2px 2px rgb(14, 150, 204) ;
+
+  font-size: 30px;
+}
+#characters img{
+  width:500px;
+  height:500px;
+} */
